@@ -2,20 +2,19 @@
     background-color: rgb(30, 30, 30);
     width: 100%;
     height: calc(100vh + 150px);
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 150px 150px 50px 150px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
 #divDonload>img{
-    width: 500px;
+    width: 450px;
 }
 #divDonload section{
-    width: 820px;
+    width: 630px;
     height: 100%;
     overflow: hidden;
-    transition: 4s;
+    transition: 5s;
 }
 
 #conteinerCarousel{
@@ -24,13 +23,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px 70px;
+    gap: 20px 30px;
     transition: 0.5s;
 
 }
 .cardDownload{
-    width: 350px;
-    height: calc(45% - 20px);
+    width: 300px;
+    height: calc(50% - 20px);
     color: white;
     display: flex;
     flex-direction: column;
@@ -44,6 +43,7 @@
 }
 .cardDownload h2{
     font-size: 35px;
+    margin-bottom: -20px;
 }
 .cardDownload p{
     font-size: 16px;   
@@ -56,9 +56,10 @@
     border-radius: 15px;
     padding: 5px;
     transition: .5s;
+    margin-bottom: -20px;
 }
 .cardDownload .active{
-    background-color: #80750D;
+    background-color: #ff660096;
 }
 #controlers{
     width: 100%;
@@ -67,18 +68,20 @@
     align-items: center;
 }
 #controlers input[type="button"]{
-    width: 80px;
-    height: 25px;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
     color: white;
-    background: gray;
-    border: 1px solid black;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    border-radius: 50%;
+    overflow: visible;
 }
 #controlers input[type="radio"]{
     appearance: none;
-    height: 15px;
-    width: 50px;
+    height: 10px;
+    width: 30px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: gray;

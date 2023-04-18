@@ -25,25 +25,25 @@ const Download: FunctionComponent<Download> = (props)=>{
       
     },[])
     function next(){
-      if(numControl != -2520){
-        setNumControl((num)=> num -= 840)
-        _carousel.current!.style.marginLeft = `${numControl - 840}px`
-        updateRadio(numControl - 840)
+      if(numControl != -1980){
+        setNumControl((num)=> num -= 660)
+        _carousel.current!.style.marginLeft = `${numControl - 660}px`
+        updateRadio(numControl - 660)
       }
     }
     function prev(){
       if(numControl != 0){
-        setNumControl((num)=> num += 840)
-        _carousel.current!.style.marginLeft = `${numControl + 840}px`
-        updateRadio(numControl + 840)
+        setNumControl((num)=> num += 660)
+        _carousel.current!.style.marginLeft = `${numControl + 660}px`
+        updateRadio(numControl + 660)
       }
     }
     function updateRadio(num:number){
       switch (num) {
         case 0: _sontrolRadio1.current!.checked = true; break;
-        case -840: _sontrolRadio2.current!.checked = true; break;
-        case -1680: _sontrolRadio3.current!.checked = true; break;
-        case -2520: _sontrolRadio4.current!.checked = true; break;
+        case -660: _sontrolRadio2.current!.checked = true; break;
+        case -1320: _sontrolRadio3.current!.checked = true; break;
+        case -1980: _sontrolRadio4.current!.checked = true; break;
       
         default:
           break;
@@ -161,9 +161,9 @@ const Download: FunctionComponent<Download> = (props)=>{
           <div id="controlers" ref={_controls}> 
             <input type="button" value="<" onClick={prev}/>
             <input type="radio" name="control" className="control" ref={_sontrolRadio1} onClick={updateClickRadio} value={0} defaultChecked/>
-            <input type="radio" name="control" className="control" ref={_sontrolRadio2} onClick={updateClickRadio} value={-840}/>
-            <input type="radio" name="control" className="control" ref={_sontrolRadio3} onClick={updateClickRadio} value={-1680}/>
-            <input type="radio" name="control" className="control" ref={_sontrolRadio4} onClick={updateClickRadio} value={-2520}/>
+            <input type="radio" name="control" className="control" ref={_sontrolRadio2} onClick={updateClickRadio} value={-660}/>
+            <input type="radio" name="control" className="control" ref={_sontrolRadio3} onClick={updateClickRadio} value={-1320}/>
+            <input type="radio" name="control" className="control" ref={_sontrolRadio4} onClick={updateClickRadio} value={-1980}/>
             <input type="button" value=">" onClick={next}/>
           </div>
         </section>

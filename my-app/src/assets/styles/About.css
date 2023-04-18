@@ -8,24 +8,29 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 150px;
 }
 #aboutText{
-    width: 40%;
+    width: 55%;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: white;
-    gap: 30px;
+
 }
 #aboutText h1{
     font-size: 50px;
+    margin-bottom: -10px;
 }
 #aboutText p{
-    font-size: 20px;
-    text-align: justify;
+    font-size: 16px;
+    line-height: 23px;
+    text-indent: 10px;
 }
 #aboutText a{
+    margin-top: 70px;
     color: white;
     text-decoration: none;
     background-color: #833400;
@@ -34,7 +39,8 @@
 
 }
 #divAbout main img{
-    width: 40%;
+    width: 45%;
+    margin-right: -60px;
 }
 #divAbout svg{
     width: 100%;
